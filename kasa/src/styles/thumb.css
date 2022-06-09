@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+.thumb {
+    display:	flex;
+    align-items:center;
+
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    color: #fff;
+    margin-top: 50px;
+
+}
+
+ /* p {
+    font-family:'Montserrat';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    margin-left: 5%;
+    width: 100%;
+}  */
+
+/* .containerThumb {
+    background-color: #f6f6f6;
+    width: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+} */
+
+

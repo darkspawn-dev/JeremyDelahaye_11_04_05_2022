@@ -1,0 +1,28 @@
+.Error404 {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+  h1 {
+    font-family: 'Montserrat';
+    font-size: 288px;
+    color: #ff6060;
+    text-align: center;
+    margin-bottom: -10px;
+  }
+  .error {
+    font-size: 36px;
+    color: #ff6060;
+    text-align: center;
+  }
+
+.linkbottom{
+  color: #ff6060;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 150px;
+}

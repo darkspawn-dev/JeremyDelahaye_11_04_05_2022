@@ -1,0 +1,38 @@
+.main {
+    background-image: url('../assets/chezvous.png'); 
+       width: 1240px;
+    height: 223px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+ .section {
+    position: relative;
+    margin: 50px 0;
+    color: #fff;
+    padding: 40px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+    border-radius: 25px;
+} 
+
+.home {
+    position: relative;
+    font-weight: normal;
+    text-align: center;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 705px;
+    height: 68px;
+}
