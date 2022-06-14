@@ -1,32 +1,33 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { UseFetch } from "../utils/fetch";
 import Carousel from "../components/carousel";
 import Error404 from "../pages/Error404";
 import styled from "styled-components";
+import data from "../data/data.json"
+import DescriptionLogement from "../components/description";
+
 
 const House = () => {
   const urlParams = useParams();
 
-  const { data } = UseFetch("/data.json");
+  const house = data.filter((data) => data.id === urlParams.id);
 
-  const houseData = data.filter((data) => data.id === urlParams.id);
-
-  if (houseData[0] !== undefined) {
+  if (house[0] !== undefined) {
     return (
       <MainStyle className="main main-House">
-        {houseData.map((location, index) => (
+        {house.map((location, index) => (
           <section className="container" key={index}>
-            <Carousel key="carousel" />
-          
+              <Carousel slides={data}/>
+              <DescriptionLogement
+              key={location.title}
+              title={location.title}
+              location={location.location}
+              />
           </section>
         ))}
       </MainStyle>
     );
   } else {
-    if (data.length === 0) {
-      return <main className="loading">Loading...</main>;
-    } else {
       return (
         <main>
           <Error404 />
@@ -34,7 +35,7 @@ const House = () => {
       );
     }
   }
-};
+
 
 const MainStyle = styled.main`
   margin-bottom: 100px;

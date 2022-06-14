@@ -25,21 +25,20 @@ width: 340px;
 height: 340px;
 position: relative;
 
-
   img {
         width: 100%;
-        height:100%;
+        height:320px;
         border-radius: 10px;
         object-fit: cover;
   }
   
   p {
     position: absolute;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: #fff;
     left: 20px;
-    bottom: 23px;
-    font-weight: 600;
+    bottom: 2px;
+    font-weight:500;
     width: 90%;
     z-index: 2;
     pointer-events: none;

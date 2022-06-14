@@ -1,10 +1,10 @@
 
 import '../styles/tag.css'
 
-function Tag () {
-    const title = "name"
+const Tag  = ({ Title }) => {
+
     return <div class="tag">
-        <p>{title}</p>
+        <p>{Title}</p>
     </div>
 }
 

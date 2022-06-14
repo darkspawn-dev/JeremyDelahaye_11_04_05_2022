@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 const Error404 = () => {
     return (
         <div>
+            
         <div class="404">
             <h1>404</h1>
             <p class="error">

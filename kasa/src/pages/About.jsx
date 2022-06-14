@@ -12,7 +12,7 @@ function About () {
                 class={`about`}
             />
             </AboutStyle>
-
+        
             <Accordion 
             title="Fiabilité" 
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dignissim purus. Nulla facilisi. Fusce quis ex justo. Sed viverra."
@@ -59,8 +59,5 @@ const AboutStyle = styled.div`
     border-radius: 25px;
     height: 223px;
 
-    @media (max-width: 576px) {
-      border-radius: 10px;
-    } 
   }
 `;

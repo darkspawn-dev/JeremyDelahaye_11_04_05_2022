@@ -1,10 +1,12 @@
 .tag {
     background-color: #FF6060;
     color: #fff;
-    width: auto;
-    max-width: 200px;
+    width: 120px;
+    max-width: 250px;
+    height: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
     margin-left: 20px;
 }
@@ -13,4 +15,5 @@ p {
     font-size: 14px;
     font-family:'Montserrat';
     font-weight: 500;
+
 }

@@ -24,18 +24,18 @@ const Gallery = () => {
 const GallerySectionStyle = styled.div`
 width: 1240px;
 height: 829px;
-overflow: hidden;
+overflow: scroll;
 
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
-  grid-template row: repeat(5, 1fr)
-  justify-items: center;
-  justify-content: center;
-  background-color: #f6f6f6;
-  border-radius: 25px;
-  grid-row-gap: 300px;
-    grid-column-gap: 0px;
-    margin: auto
+display: grid;
+grid-template-columns: repeat(3, 400px);
+grid-template row: repeat(8, 1fr)
+justify-content:center;
+background-color: #f6f6f6;
+border-radius: 25px;
+grid-row-gap: 300px;
+grid-column-gap: px;
+margin:auto;
+padding-left:145px
 
 `;
 
