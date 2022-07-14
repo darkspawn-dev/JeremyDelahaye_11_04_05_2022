@@ -44,7 +44,6 @@ const AboutStyle = styled.div`
     position: relative;
     color: #fff;
     padding: 40px 10px;
-
     display: flex;
 
     justify-content: center;

@@ -10,6 +10,7 @@ function App() {
       <Home />
       <Tag />
       <Thumb />
+
       <Footer />
 
 

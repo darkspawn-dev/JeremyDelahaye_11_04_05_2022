@@ -33,9 +33,10 @@ const House = () => {
           <Error404 />
         </main>
       );
+      
     }
+    
   }
-
 
 const MainStyle = styled.main`
   margin-bottom: 100px;

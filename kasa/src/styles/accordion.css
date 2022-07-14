@@ -1,6 +1,7 @@
 .accordion__section {
     display: flex;
     flex-direction: column;
+    margin: 0 50px 0 50px;
     align-items: center;
     margin-bottom: 10px;
 }

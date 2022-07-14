@@ -40,12 +40,11 @@ const Description = () => {
                     title="Description"
                     content={location.description}
                   />
-                  <Accordion
+                  <Accordion className="equipment"
                     key={`${index}-${`equipement`}`}
                     title="Équipements"
                     content={location.equipments}
                   />        
-
                 </Accordions>
               </div>
             ))}
@@ -54,9 +53,9 @@ const Description = () => {
     };
 
 
-    export default Description
+export default Description
 
-    const DescriptionHouse = styled.div `
+const DescriptionHouse = styled.div `
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -64,18 +63,22 @@ const Description = () => {
     margin-top: 25px;
     width: 100%;
   
-    .Title {
-      h1 {
-        font-size: 2.25rem;
-        font-weight: 400;
-        margin-top: 25px;
-      }
-      > p {
-        margin-top: 10px;
-      }
+.Title {
+  h1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 36px;
+    font-weight: 400;
+      margin-top: 25px;
+    width: 300px;
     }
+    p {
+      margin-top: 10px;
+      }
+}
+
 .container-description {
-  width:800px;
+  width: 1000px;
   display: flex;
   justify-content:center;
 
@@ -87,30 +90,33 @@ const Description = () => {
       flex-wrap:wrap;
       width:100%;
     }
-    `
-    const Tags = styled.div`
+    `;
+
+  const Tags = styled.div`
     display: flex;
     align-items: center;
-    `
+    `;
   const Accordions = styled.div`
-  width: 100%;
   display: flex;
-
-  align-items: flex-start;
+  // align-items: flex-start;
 
   justify-content: center;
 
-  .accordion {
-    width: 45%;
-    margin: 30px 0;
+   .accordion {
+  //   width: 45%;
+    //  margin: 30px 0;
+.equipment{
+  display: flex;
+  flex-direction: column;
+}
+  //   p {
+  //     font-size: 1.125rem;
+  //   }
 
-    p {
-      font-size: 1.125rem;
-    }
+  //   .accordingContent.show {
+  //     max-height: 400px;
+  //     opacity: 1;
+  //   }
+  // }
+   `
 
-    .accordingContent.show {
-      max-height: 400px;
-      opacity: 1;
-    }
-  }
-  `
